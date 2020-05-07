@@ -46,3 +46,4 @@ for n in range(2,10):
         print(n, 'is a prime number')
 
 # the above is some weird maths shit
+
