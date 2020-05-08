@@ -78,4 +78,20 @@ def cheeseshop(kind, *arguments, **keywords):
 
 cheeseshop('Limburger', 'It\'s very runny, sir', shopkeeper='Michael Palin', client='John Cleese', sketch='Cheese Shop Sketch')
 
+# arbitrary argument lists
+
+def write_multiple_items(file, separator, *args):
+    file.write(separator.join(args))
+
+def concat(*args, sep='/'):
+    return sep.join(args)
+print(concat('stein', 'stein', 'stern', sep='$$'))
+
+# Lmbda expressions
+def increment(n):
+    return lambda x: x + n
+
+f= increment(20)
+g = increment(7)
+print(g(20))
 
