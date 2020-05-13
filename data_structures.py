@@ -98,3 +98,16 @@ print(new_list)
 letnum = [(letter, num) for letter in 'abcd' for num in range(4)]
 print(letnum)
 
+#dictionary comprehensions, more
+names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
+heroes = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
+
+secret_id = {name: hero for name, hero in zip(names,heroes)}
+print(secret_id)
+
+
+
+# modules
+import fibo
+fib = fibo.fibo
+print(fib(567))
